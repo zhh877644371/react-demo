@@ -1,24 +1,24 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 export default class Home extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            count:0
+            count: 0
         }
     }
 
-    _handleClick(){
+    _handleClick() {
         this.setState({
-            count:++this.state.count
+            count: ++this.state.count
         });
     }
 
     render() {
         return (
             <div>
-                this is home~111<br/>
-                当前计数：{this.state.count}<br/>
+                this is home~111<br />
+                当前计数：{this.state.count}<br />
                 <button onClick={() => this._handleClick()}>自增</button>
             </div>
         )
