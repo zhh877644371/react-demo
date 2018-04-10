@@ -14,6 +14,7 @@ export default class Nav extends Component {
                 <li><Link to="/initstate">InitState</Link></li>
                 <li><Link to="/statedemo">StateDemo</Link></li>
                 <li><Link to="/asyncstate">AsyncState</Link></li>
+                <li><Link to="/eventbinding">EventBinding</Link></li>
             </ul>
         )
     }

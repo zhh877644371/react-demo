@@ -15,6 +15,7 @@ import PropsTypeCheck from 'bundle-loader?lazy&name=propsTypeCheck!pages/ReactSt
 import InitState from 'bundle-loader?lazy&name=initState!pages/ReactStudy/InitState';
 import StateDemo from 'bundle-loader?lazy&name=stateDemo!pages/ReactStudy/StateDemo';
 import AsyncState from 'bundle-loader?lazy&name=asyncState!pages/ReactStudy/AsyncState';
+import EventBinding from 'bundle-loader?lazy&name=eventBingding!pages/ReactStudy/EventBinding';
 
 const createComponent = (component) => (props) => (
     <Bundle load={component}>
@@ -36,6 +37,7 @@ export default () => (
             <Route path="/initstate" component={createComponent(InitState)} />
             <Route path="/statedemo" component={createComponent(StateDemo)} />
             <Route path="/asyncstate" component={createComponent(AsyncState)} />
+            <Route path="/eventbinding" component={createComponent(EventBinding)} />
             <Route component={createComponent(NotFound)}/>
         </Switch>
     </div>
